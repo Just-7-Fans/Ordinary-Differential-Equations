@@ -25,8 +25,9 @@ for i in range(0, N - 1):
 
     Y[i + 1], Z[i + 1] = Y[i] + h * (Y1 + 3 * Y2) / 4, Z[i] + h * (Z1 + 3 * Z2) / 4
 
-plt.plot(Y)
-plt.plot(Z)
+plt.plot(Y, label = 'y(x)')
+plt.plot(Z, label = 'y\'(x)')
+plt.legend()
 plt.show()
 
 plt.plot(Y, Z)
